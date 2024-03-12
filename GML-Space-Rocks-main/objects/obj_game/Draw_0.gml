@@ -12,10 +12,8 @@ switch(room){
 			5, 5, 0, c,c,c,c, 1
 		);
 		draw_text(
-			room_width/2, 360, 
-			@"Score 1,000 points to win!
-			
-			WASD: Move
+			room_width/2, 370, 
+			@"WASD: Move
 			LEFT MOUSE: Shoot
 			
 			>>PRESS ENTER TO START<<

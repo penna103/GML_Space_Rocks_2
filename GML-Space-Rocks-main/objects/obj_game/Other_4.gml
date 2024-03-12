@@ -3,7 +3,7 @@ if(room == rm_game){
 	if(audio_is_playing(msc_song)){
 		audio_play_sound(snd_zap, 1, false);	
 	} else {
-		audio_play_sound(msc_song, 2, true);
+
 	}	
 
 	var xx = choose(

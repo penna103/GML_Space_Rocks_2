@@ -17,11 +17,11 @@ if keyboard_check(ord("S")){
 }
 
 if(speed > 0){
-	speed = speed - 0.01	
+	speed = speed - 0.005
 }
 
-if(speed > 2.5){
-	speed = speed - 0.19
+if(speed > 3){
+	speed = speed - 0.195
 }
 
 if(mouse_check_button_pressed(mb_left)){
