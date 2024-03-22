@@ -1,7 +1,7 @@
 lives = lives - 1;
 
 with obj_game{
-	alarm[1] = 150;
+	alarm[10] = 150;
 }
 
 audio_play_sound(snd_die, 1, false);

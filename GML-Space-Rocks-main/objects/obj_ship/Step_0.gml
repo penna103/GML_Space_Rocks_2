@@ -20,7 +20,7 @@ if(speed > 0){
 	speed = speed - 0.005
 }
 
-if(speed > 3){
+if(speed > 4){
 	speed = speed - 0.195
 }
 
