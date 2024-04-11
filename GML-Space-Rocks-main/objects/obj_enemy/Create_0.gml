@@ -7,6 +7,6 @@ speed = 0.25
 
 	
 //enemy ai//
-counter = 0
-mode = irandom_range(1, 2)
-actionlength = 0
+counter = -1
+mode = irandom_range(4, 4)
+actionlength = 999
