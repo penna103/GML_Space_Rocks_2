@@ -1,15 +1,15 @@
-/// @description enemymove2
+/// @description move2
 if (counter = 0){
-	actionlength = irandom_range(1, 3)
+	actionlength = irandom_range(1, 3) * 90
 	speed = 3
-	actiondirection = choose(1, -1)
+	actiondirection = choose(-1, 1)
 }
 
 if (counter >= 1){
-	moveangle = moveangle + actiondirection
+moveangle = moveangle + actiondirection
 }
 
-if (counter >= actionlength * 90){
-mode = irandom_range(1, 4)
+if (counter >= actionlength){
+mode = irandom_range(1, 5)
 counter = -1
 }

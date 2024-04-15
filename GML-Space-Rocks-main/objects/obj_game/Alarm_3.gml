@@ -10,7 +10,7 @@ if (choose(0, 1) == 0){
 	var yy = choose(0, room_height);	
 }
 		
-instance_create_layer(xx, yy, "Instances", obj_wishingstar);
+instance_create_layer(xx, yy, "Instances", obj_enemy);
 
-alarm [3] = room_speed * 40;
-alarm [4] = room_speed * 40;
+alarm [3] = room_speed * 20;
+alarm [4] = room_speed * 20;
