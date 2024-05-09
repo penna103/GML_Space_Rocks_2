@@ -1,0 +1,1 @@
+owner.playerclose = 1

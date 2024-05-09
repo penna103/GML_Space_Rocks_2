@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wishingstar",
+  "name": "obj_bomb",
   "spriteId": {
-    "name": "spr_wishingstar",
-    "path": "sprites/spr_wishingstar/spr_wishingstar.yy",
+    "name": "spr_bomb",
+    "path": "sprites/spr_bomb/spr_bomb.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,7 +26,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_shot","path":"objects/obj_shot/obj_shot.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
