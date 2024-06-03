@@ -1,13 +1,13 @@
 /// @description avoidplayer
-if instance_exists(obj_ship){
+if instance_exists(obj_par_playerobjects){
 playeravoidangle = 
-point_direction(x, y, instance_nearest(x, y, obj_ship).x, instance_nearest(x, y, obj_ship).y) 
-+ 180
+point_direction(x, y, instance_nearest(x, y, obj_par_playerobjects).x, instance_nearest(x, y, obj_par_playerobjects).y) 
+- 180
 }
 
-if (hspeedavoidplayer > -4.0 && hspeedavoidplayer  < 4.0){
-	hspeedavoidplayer = hspeedavoidplayer + dcos(playeravoidangle) * 0.1
+if (hspeed3 > -4.0 && hspeed3 < 4.0){
+	hspeed3 = hspeed3 + dcos(playeravoidangle) * 0.1
 }
-if (vspeedavoidplayer > -4.0 && vspeedavoidplayer  < 4.0){
-	vspeedavoidplayer = vspeedavoidplayer + -dsin(playeravoidangle) * 0.1
+if (vspeed3 > -4.0 && vspeed3 < 4.0){
+	vspeed3 = vspeed3 + -dsin(playeravoidangle) * 0.1
 }

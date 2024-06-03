@@ -13,8 +13,8 @@ if (counter = 0){
 
 if (counter >= 0){
 	moveangle = moveangle + actiondirection * 1.5
-	hspeednatural = dcos(moveangle) * 2
-	vspeednatural = -dsin(moveangle) * 2
+	hspeed1 = dcos(moveangle) * 2
+	vspeed1 = -dsin(moveangle) * 2
 	
 	fireangle = fireangle + actiondirection * 1.5
 	if instance_exists(obj_ship){image_angle = point_direction(x, y, obj_ship.x, obj_ship.y) + 180 + fireangle}

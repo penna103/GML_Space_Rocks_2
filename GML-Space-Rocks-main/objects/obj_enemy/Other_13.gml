@@ -13,13 +13,13 @@ if (counter = 0) or (counter = 120){
 		+ actiondirection * 90
 		+ actionmagnitude * actiondirection
 		}
-	hspeednatural = dcos(moveangle) * 3
-	vspeednatural = -dsin(moveangle) * 3
+	hspeed1 = dcos(moveangle) * 3
+	vspeed1 = -dsin(moveangle) * 3
 }
 
 if (counter = 65) or (counter = 185){
-	hspeednatural = dcos(moveangle) * 0.5
-	vspeednatural = -dsin(moveangle) * 0.5
+	hspeed1 = dcos(moveangle) * 0.5
+	vspeed1 = -dsin(moveangle) * 0.5
 	}
 
 if (counter = 80) or (counter = 100) or (counter = 200) or (counter = 220){event_user(0)}

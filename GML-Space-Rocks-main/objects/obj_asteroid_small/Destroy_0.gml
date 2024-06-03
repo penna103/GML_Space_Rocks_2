@@ -1,3 +1,3 @@
 event_inherited();
 
-score = score + 5
+score = score + 4

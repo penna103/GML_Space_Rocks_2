@@ -10,9 +10,15 @@ if(keyboard_check_pressed(vk_enter)){
 	}
 }
 
-if(room == rm_game){
-	if(lives <= 0){
-		room_goto(rm_end);
-		audio_play_sound(snd_lose, 1, false);
-	}
+if (score >= 2000 * nextbomb){
+	global.bombs = global.bombs + 1
+	nextbomb = nextbomb + 1
 }
+
+if(room == rm_game){
+	gamecounter = gamecounter + 1
+	asteroidspawncounter = asteroidspawncounter + 1
+	asteroidcooldown = 200000/gamecounter + 14;
+	if (asteroidspawncounter >= asteroidcooldown){event_user(0)}
+}
+

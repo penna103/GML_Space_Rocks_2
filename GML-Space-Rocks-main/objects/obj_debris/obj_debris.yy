@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_debris",
   "spriteId": {
-    "name": "spr_debris",
-    "path": "sprites/spr_debris/spr_debris.yy",
+    "name": "spr_debris0",
+    "path": "sprites/spr_debris0/spr_debris0.yy",
   },
   "solid": false,
   "visible": true,

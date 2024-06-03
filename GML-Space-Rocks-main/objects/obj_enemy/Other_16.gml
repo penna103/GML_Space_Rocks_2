@@ -13,9 +13,9 @@ if (dodgeanglebullet <= 0){
 
 dodgeangle = bulletangle + dodgedirection * 90
 
-if (hspeeddodge > -3.0 && hspeeddodge < 3.0){
-	hspeeddodge = hspeeddodge + dcos(dodgeangle) * 0.5
+if (hspeed2 > -2.5 && hspeed2 < 2.5){
+	hspeed2 = hspeed2 + dcos(dodgeangle) * 0.25
 }
-if (vspeeddodge > -3.0 && vspeeddodge < 3.0){
-	vspeeddodge = vspeeddodge +  -dsin(dodgeangle) * 0.5
+if (vspeed2 > -2.5 && vspeed2 < 2.5){
+	vspeed2 = vspeed2 +  -dsin(dodgeangle) * 0.25
 }
