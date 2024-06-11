@@ -26,23 +26,30 @@ if(speed > 3.5){
 
 move_wrap(true,true,sprite_width/2);
 
-if (mouse_check_button(mb_left)) && (bulletcooldown >= 15){
-	var inst = instance_create_layer(x,y, "Instances", obj_shot);
-	inst.direction = image_angle
-	audio_play_sound(snd_zap, 1, false);
-	bulletcooldown = 0
+if (mouse_check_button(mb_left)){
+	if (bulletcounter >= 15 - bulletcharge){
+		var inst = instance_create_layer(x,y, "Instances", obj_shot);
+		inst.direction = image_angle
+		audio_play_sound(snd_hurt, 1, false);
+		bulletcounter = 0
+		if bulletcharge > 1{
+			bulletcharge = bulletcharge - 1	
+		}
+	}
+} else if bulletcharge < 15{
+	bulletcharge = bulletcharge + 1/6
 }
 
-if (mouse_check_button(mb_right)) && (bombcooldown >= 120) && (global.bombs > 0){
+if (mouse_check_button(mb_right)) && (bombcounter >= 120) && (global.bombs > 0){
 	instance_create_layer(x,y, "Instances", obj_bomb)
-	bombcooldown = 0
+	bombcounter = 0
 	global.bombs = global.bombs - 1
 }
 
-if (bulletcooldown < 15){
-	bulletcooldown = bulletcooldown + 1
+if (bulletcounter < 15){
+	bulletcounter = bulletcounter + 1
 }
 
-if (bombcooldown < 180){
-	bombcooldown = bombcooldown + 1
+if (bombcounter < 120){
+	bombcounter = bombcounter + 1
 }

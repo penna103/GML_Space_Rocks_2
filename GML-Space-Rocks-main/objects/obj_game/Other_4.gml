@@ -6,5 +6,5 @@ if(room == rm_game){
 		audio_play_sound(snd_zap, 1, false);	
 	}
 
-	alarm[0] = 2700
+	alarm[0] = 3600
 }

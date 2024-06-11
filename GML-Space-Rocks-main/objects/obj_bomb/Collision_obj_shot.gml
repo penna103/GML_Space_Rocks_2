@@ -2,6 +2,8 @@ if (primed = 0){exit}
 
 instance_destroy()
 
+audio_play_sound(snd_explosion, 1, false)
+
 var inst3 = instance_create_layer(x,y,"Instances", obj_explosion)
 inst3.rotatespeed = -2.3
 inst3.size = 6
